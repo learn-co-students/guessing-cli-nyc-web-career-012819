@@ -8,12 +8,12 @@ def run_guessing_game
     if input == "exit"
       puts "Goodbye!"
       break
-    elsif input == gen
-      puts "You guessed correctly!"
-      break
+    elsif input.to_i == gen
+      puts "You guessed the correct number!"
     elsif input != gen
-      puts "The computer guessed #{gen}"
+      puts "The computer guessed #{gen}."
     else
       puts "Invalid input"
     end
+  end
 end
